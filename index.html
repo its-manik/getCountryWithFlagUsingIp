@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <style>
+    main {
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0.2)
+        ),
+        url(./2.webp);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+
+  <body>
+    <!-- <main>
+      <div class="profile">
+        <div class="toppart">
+          <div class="profilepic">
+            <img src="kat.png" alt="" />
+          </div>
+          <div class="namewithbadge relative h-3 w-full">
+            <span class="name">Katrina</span>
+            <div class="badge flex">
+              <span
+                class="animate-ping absolute inline-flex h-full w-3 rounded-full bg-green-400 opacity-75"
+              ></span
+              ><span>Online Now</span>
+            </div>
+          </div>
+          <div class="response">
+            <p>Avg response time: 2 minutes</p>
+            <p class="reslocation">Dhaka, BD</p>
+          </div>
+          <div class="text">
+            <span class="country">Staying in Dhaka</span>
+            <span>
+              until 26 Mar. Send me a message here, I reply to all my DMs
+              ❤️</span
+            >
+          </div>
+        </div>
+        <div class="bottompart">
+          <div class="profilebutton">Send me a message</div>
+          <div class="profilefooter">
+            <span class="off">80% OFF</span> sale end in
+            <span class="timer">0h 20m 00s</span>
+          </div>
+        </div>
+      </div>
+    </main> -->
+
+    <div
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-50"
+    >
+      <div class="fixed inset-0 overflow-hidden opacity-75 bg-[#f8fafb]">
+        <img
+          alt="World Map"
+          loading="lazy"
+          decoding="async"
+          data-nimg="fill"
+          class="object-cover"
+          style="
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            color: transparent;
+          "
+          sizes="100vw"
+          srcset="
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=640&amp;q=100   640w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=750&amp;q=100   750w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=828&amp;q=100   828w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=1080&amp;q=100 1080w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=1200&amp;q=100 1200w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=1920&amp;q=100 1920w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=2048&amp;q=100 2048w,
+            /_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=3840&amp;q=100 3840w
+          "
+          src="/_next/image?url=https%3A%2F%2Fnksjlfawitjewbktomqs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fimages%2Fira%2F2&amp;w=3840&amp;q=100"
+        />
+      </div>
+      <main
+        class="z-10 flex flex-col items-center flex-1 px-4 pt-8 text-center sm:px-20 sm:pt-20"
+      >
+        <section
+          class="w-full text-center max-w-lg mt-16 transition bg-white border border-gray-300 rounded-lg shadow-lg hover:shadow-2xl relative"
+        >
+          <div class="justify-center text-center p-4 border-b items-between">
+            <img
+              class="absolute object-cover -mt-6 transform -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-transform duration-300 inline-block h-24 w-24 rounded-full border-2 shadow-lg border-white"
+              src="https://cdnof.sfo3.cdn.digitaloceanspaces.com/kat.png"
+              alt=""
+            />
+            <div class="ml-4 mx-auto text-center align-middle relative mt-8">
+              <h4 class="font-semibold">
+                <span>Katrina</span><span
+                  class="px-2 ml-1 py-1 text-sm relative text-green-500 bg-green-100 rounded-full shadow-green-400"
+                  ><span class="absolute top-1.5 left-1.5 flex w-3 h-3 z-40"
+                    ><span
+                      class="absolute inline-flex w-full h-full duration-1000 bg-green-400 rounded-full opacity-75 animate-ping"
+                    ></span
+                    ><span
+                      class="relative inline-flex w-3 h-3 bg-green-400 rounded-full"
+                    ></span
+                  ></span>
+                  <span class="ml-3">Online Now</span></span
+                >
+              </h4>
+              <div
+                class="flex flex-col text-sm text-slate-400 sm:flex-row items-center justify-center mt-2"
+              >
+                <span class="flex items-center"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    class="h-4 text-slate-400 mr-0.5 mt-0.5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Avg response time: 2 minutes</span
+                ><span class="hidden sm:block mx-2"> | </span
+                ><span class="flex items-center"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    class="h-4 text-slate-400 mt-0.5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  ><span class="city"></span> <span class="countryCode"></span
+                ></span>
+              </div>
+              <p class="text-gray-500 text-md mt-3 sm:my-6">
+                Staying in
+                <span class="inline-block city2"></span>
+                <img
+                  alt="Flag"
+                  loading="lazy"
+                  width="24"
+                  height="4"
+                  decoding="async"
+                  data-nimg="1"
+                  class="inline-block object-contain h-4 flagfinal"
+                  style="color: transparent"
+                />
+                until
+                <!-- -->26 Mar. Send me a message here, I reply to all my DMs ❤️
+              </p>
+            </div>
+          </div>
+          <div class="p-4 space-y-4 rounded-b-lg flexborder-b bg-gray-50">
+            <a href="https://5vpe.short.gy/cam3"
+              ><button
+                class="z-10 w-full py-3 mt-4 font-medium tracking-wide text-white transform shadow bg-sky-500 rounded-lg hover:scale-105 duration-150 hover:shadow-xl">
+                <strong class="flex items-center justify-center gap-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                </svg>
+                <span>Send me a message</span></strong>
+              </button></a>
+
+            <p class="text-sm text-slate-600">
+              <span class="uppercase text-red-500 font-semibold">80% off</span>
+              sale end in  <span class="display"></span>
+            </p>
+           
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
