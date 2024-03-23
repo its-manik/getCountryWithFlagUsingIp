@@ -10,37 +10,28 @@ let flag
 let countryCode
 
 
-const ipapi = 'http://ip-api.com/json/?fields=61439'
+const apiUrl = 'https://api.ipdata.co/?api-key=be253ee6a050d2b0ba3c5a03e2684dd05b8aa9fec2c9b292797a4d63'
 
 async function getCountryName(name) {
-  const ipApiResponse = await fetch(ipapi);
-  const ipApiResponseData = await ipApiResponse.json();
-  
-  country = ipApiResponseData.country
+  const response = await fetch(apiUrl);
+  const responseData = await response.json();
 
   
+  countryCode = responseData.country_code;
+  city = responseData.city;
+  flag = responseData.flag;
+  
+  if(responseData.city === null) city = responseData.continent_name;
 
-  const restcontriesurl = 'https://restcountries.com/v3.1/name/' + country;
-  const restContriesResponse = await fetch(restcontriesurl);
-  const restContriesResponseData = await restContriesResponse.json();
 
+  console.log(responseData);
 
-  city = restContriesResponseData[0].capital[0];
-  flag = restContriesResponseData[0].flags.png;
-  countryCode = ipApiResponseData.countryCode;
-
-  // console.log(ipApiResponseData);
-  console.log(restContriesResponseData);
-  console.log(city);
-  console.log(flag);
-  console.log(countryCode);
 
   cityHtml.innerHTML = city
   city2Html.innerHTML = city
   countryCodeHtml.innerHTML = ", " + countryCode
   flagFinalHtml.src = flag
 
-  // console.log();
 }
 
 getCountryName()
